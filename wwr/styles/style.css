@@ -211,6 +211,64 @@ main section img {
     box-shadow: 5px 5px 10px black;
 }
 
+/* FAQ page css */
+
+#faq {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.faq-title {
+    color: white;
+    margin: 2%px;
+}
+#faq-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    /* z-index: -1; */
+}
+#faq-image {
+    width: 100%;
+}
+#faq-tital-message {
+    text-align: center;
+    font-family: "Lemon", 'Bradley Hand', sans-serif;
+}
+#faq-tital-message {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.question {
+    font-family: "Lemon", 'Bradley Hand', sans-serif;
+    display: inline;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    background-color: #0f5f96;
+    color: white;
+    margin: 0px 0px;
+    margin-right: auto;
+    margin-left: 2%;
+    z-index: 1;
+    padding: 1%;
+    font-size: 1.5em;
+    justify-items: center;
+}
+.answer {
+    display: inline;
+    grid-column: 1/4;
+    grid-row: 2/8;
+    background-color: #137DC5;
+    padding: 1%;
+    padding-top: 4%;
+    font-size: 1.5em;
+    margin: 0px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
