@@ -219,7 +219,7 @@ main section img {
 }
 .faq-title {
     color: white;
-    margin: 2%px;
+    margin: 2%;
 }
 #faq-box {
     grid-column: 1/4;
