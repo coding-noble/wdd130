@@ -15,36 +15,110 @@
         <a href="patterns.html">Patterns</a>
     </header>
     <body>
-        <h1>Home</h1>
-        <main id="home_grid">
-            <section>
+        <h1>The Solution</h1>
+        <main id="solution_grid">
+            <div>
+                <p>When solving a Rubik's cube, you're going to want to start by picking which color you want to solve first, it doesn't matter what color it is but once you pick a starting color, stick with it until the end. To find what face your starting color is, locate the center piece that it matches then rotate the entire cube until your chosen color center piece is on the bottom face. This is how you will hold the cube for all of the steps.</p>
+            </div>
+            <section id="step_1">
+                <div class="step_header">
+                    <h1>Step 1: The Cross</h1>
+                </div>
+                <p>The first step involves solving the four edge pieces that have your starting color, in the picture you can see that I have the four white edges lined up with all the corresponding centers. Sadly there are no algorithms for this step which makes it one of the hardest steps in the whole process, but with some good experimentation and trial and error, anyone can learn how to solve the first cross.</p>
                 <div>
-                    <p>This site will help all those who are interested in solving the iconic Rubik's cube. Many people think that it's a lot
-                        harder than it really is, and by following the steps described on this website anyone can learn to master the cube.
-                        <p>
-                        Each step, in learning to solve the Rubik's cube is essential and if you are a beginner, we recommend starting by learning
-                        <a href="">standard cube notation</a>. This step will help you learn what each part of the Rubik's cube is called as
-                        well as how we reference them when reading algorithms.
-                    </p>
-                    <div class="picture_frame">
-                        <img src="images/cube_arch.JPG" alt="Rubiks Cube Display">
+                    <img src="images/edge_center_pair.jpg" alt="Edges Lined Up With Centers">
+                    <h2>Matching With Centers</h2>
+                </div>
+                <div>
+                    <img src="images/first_cross.JPG" alt="First Cross Compleated">
+                    <h2>Compleated Cross</h2>
+                </div>
+            </section>
+            <section id="step_2">
+                <div class="step_header">
+                    <h1>Step 2: Starting Color Corners</h1>
+                </div>
+                <div class="step_2_grid">
+                    <p>Now that you have your first cross and all your starting color edges lined up, the next step is to solve your starting color corner pieces. First, you need to find one of the corners that have your starting color, then place it above the location it needs to go (ex. 1 and ex. 2) and do the following algorithm.</p>
+                    <p>Once you have your corner lined up, do the following algorithm (R U R' U'). This will put the corner in the bottom face dirctly below where it was before. However the corner may not be lined up corectly but to remidy this all you need to do is repeat the algorithm up to 3 times.</p>
+                    <div>
+                        <img src="images/corner_ex1.jpg" alt="Corner Example">
+                        <h2>ex. 1</h2>
+                    </div>
+                    <div>
+                        <img src="images/corner_ex2.jpg" alt="Corner Example">
+                        <h2>ex. 2</h2>
+                    </div>
+                    <p>If there are no corners with your starting color in the up face, you will need to look in the bottom face to find your starting corners. once you have located one hold it in the FRD (front, right, down) position. Then do the algorithm one time and that will move it to the top face and you can compleat this step.</p>
+                    <div>
+                        <img src="images/frd.jpg" alt="Front Right Down Piece">
+                        <h2>FRD</h2>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="step_3">
+                <div class="step_header">
+                    <h1>Step 3: Middle Slice</h1>
+                </div>
                 <div>
-                    <div class="picture_frame">
-                        <img src="images/cube_in_cube_owg.jpg" alt="Rubiks Cube Display">
+                    <p>Now you need to look for edges that share colors that are your front face. Keep in mind that its ok to rotate the cube so your front face is a different color but keep your Up and Down faces the same. If the edge needs to be moved to the right do algorithm A and if it needs to move to the left do algorithm B.</p>
+                    <div>
+                        <img src="images/move_right.jpg" alt="Move Edge To The Right">
+                        <h2>A: (U R U' R' F R' F' R)</h2>
                     </div>
-                    <p>If you already know standard cube notation and just want to jump right into solving the Rubik's cube, head over to the
-                        <a href="">solutions page</a>. There you will learn every step in a standard method of solving the Rubik's cube,
-                        it may not be the fastest method out there, but it gets the job done and if you practice enough, you can even get times
-                        under thirty seconds.
-                        <p>
-                        Once you have mastered solving the Rubik's cube and are looking for a challenge try putting the Cube into one of the unique
-                        designs found on the <a href="">patterns page</a>. This can be a great way to practice reading cube notation and looks
-                        great when you're done.
-                    </p>
+                    <div>
+                        <img src="images/middle_slice.jpg" alt="Compleated Step 3">
+                        <h2>ex. 1</h2>
+                    </div>
+                    <div>
+                        <img src="images/move_left.jpg" alt="Move Edge To The Left">
+                        <h2>B: (U' L' U L F' L F L')</h2>
+                    </div>
+                    <p>If there are no edges in the top face that need to move to the middle row, but the middle row is not solved (ex. 1). Hold one of the unsolved edges in the FR (front, right) position and do algorithm A. This will put that edge in the top face and you can compleat this step.</p>
+                </div>
+            </section>
+            <section id="step_4">
+                <div class="step_header">
+                    <h1>Step 4: Top Edge Permutation & Orientation</h1>
+                </div>
+                <p>There are three scenarios you will be looking for in the top face and they are as follows, dot, 'L', and line. There is a fourth possibility and that would be cross, this is what we will be making from the other three scenarios. The algorithm for this step is (F R U R' F' U') hold each scenario like shown in the picture and do the algorithm, dot will lead into L, and L will lead into line and the line will lead into a cross.</p>
+                <div>
+                    <img src="images/top_dot.JPG" alt="Dot Scenario">
+                    <h2>Dot</h2>
+                </div>
+                <div>
+                    <img src="images/el.JPG" alt="L Scenario">
+                    <h2>L</h2>
+                </div>
+                <div>
+                    <img src="images/line.JPG" alt="Line Scenario">
+                    <h2>Line</h2>
+                </div>
+                <div>
+                    <img src="images/top_cross.JPG" alt="Cross Scenario">
+                    <h2>Cross</h2>
+                </div>
+                <p>Once you have the top cross you will turn the up face until two of the edges line up with the centers in the front, right, back, or left faces. Hold one of the edges that line up in the RU positions and the other needs to be either in the LU or BU positions then do this algorithm (R U R' U R U2 R') and repeat this step until all the edges are solved.</p>
+            </section>
+            <section id="step_5">
+                <div class="step_header">
+                    <h1>Step 5: Top Corner Permutation</h1>
+                </div>
+                <div>
+                    <p>look at the four remaining corner pieces and look for one that is in the right spot, this does not mean that the colors will line up you may need to look at the centers of each side and find a corner that just needs to be rotated. <p>Once you have located a corner That's in the right spot and hold the cube so the desired corner is in the URF position. Then do this algorithm until the remaining three corners are in their proper positions as well.</p>
+                    <h2>(U R U' L' U R' U' L)</h2>
+                    <div>
+                        <img src="images/top_corner.JPG" alt="Top Corner Example">
+                        <h2>ex. 1</h2>
+                    </div>
+                </div>
+            </section>
+            <section id="step_6">
+                <div class="step_header">
+                    <h1>Step 6: Top Conner Orientation</h1>
+                </div>
+                <div>
+                    <p>Once all the corners are in the right spot you will only one of them in the TRF position and do the following algorithm (D' R' D R) repeat this algorithm until the corner is orientated properly. You will notice that this messed up a lot of the cube but don't worry, turn the up face until another unsolved corner takes the place of the one you just solved and repeat the algorithm. Once you have repeated this step for all the unsolved corners the cube will be solved.</p>
                 </div>
             </section>
         </main>
