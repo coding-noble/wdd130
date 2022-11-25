@@ -43,6 +43,7 @@ h2 {
     font-size: 2em;
 }
 p {
+    font-family: Rubik, Nobile, sans-serif;
     font-size: 1.5em;
     padding: 3.5%;
 }
@@ -51,7 +52,7 @@ p {
     background-color: #636363;
     padding: 25px;
     text-align: center;
-    font-family: Rubik, Nobile, sans-serif;
+    font-family: "Rubik", "Nobile", sans-serif;
 }
 .picture_frame img {
     width: 100%;
