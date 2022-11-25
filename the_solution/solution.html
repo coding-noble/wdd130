@@ -7,131 +7,132 @@
         <link rel="stylesheet" href="styles/style.css">
         <title>Solution Page</title>
     </head>
-    <header>
-        <img id="logo" src="images/the_solution_logo.png" alt="Logo Image">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="notation.html">Notation</a>
-            <a href="solution.html">Solution</a>
-            <a href="patterns.html">Patterns</a>
-        </nav>
-    </header>
-    <body></body>
-    <h1>The Solution</h1>
-    <main>
-        <p>When solving a Rubik's cube, you're going to want to start by picking which color you want to solve first, it doesn't matter what color it is but once you pick a starting color, stick with it until the end. To find what face your starting color is, locate the center piece that it matches then rotate the entire cube until your chosen color center piece is on the bottom face. This is how you will hold the cube for all of the steps.</p>
-        <div id="step_1">
-            <div class="step_backdrop"></div>
-            <h1 class="step_header">Step 1: The Cross</h1>
-            <p>The first step involves solving the four edge pieces that have your starting color, in the picture you can see that I have the four white edges lined up with all the corresponding centers. Sadly there are no algorithms for this step which makes it one of the hardest steps in the whole process, but with some good experimentation and trial and error, anyone can learn how to solve the first cross.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/edge_center_pair.jpg" alt="Edges Lined Up With Centers">
-                    <h2>Matching With Centers</h2>
-                </div>
-                <div class="picture_frame">
-                    <img src="images/first_cross.JPG" alt="First Cross Compleated">
-                    <h2>Compleated Cross</h2>
-                </div>
-            </div>
-        </div>
-        <div id="step_2">
-            <div class="step_backdrop"></div>
-            <h1 class="step_header">Step 2: Starting Color Corners</h1>
-            <p>Now that you have your first cross and all your starting color edges lined up, the next step is to solve your starting color corner pieces. First, you need to find one of the corners that have your starting color, then place it above the location it needs to go (ex. 1 and ex. 2) and do the following algorithm.</p>
-            <p>Once you have your corner lined up, do the following algorithm (R U R' U'). This will put the corner in the bottom face dirctly below where it was before. However the corner may not be lined up corectly but to remidy this all you need to do is repeat the algorithm up to 3 times.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/corner_ex1.jpg" alt="Corner Example">
-                    <h2>ex. 1</h2>
-                </div>
-                <div class="picture_frame">
-                    <img src="images/corner_ex2.jpg" alt="Corner Example">
-                    <h2>ex. 2</h2>
+    <body>
+        <header>
+            <img id="logo" src="images/the_solution_logo.png" alt="Logo Image">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="notation.html">Notation</a>
+                <a href="solution.html">Solution</a>
+                <a href="patterns.html">Patterns</a>
+            </nav>
+        </header>
+        <h1>The Solution</h1>
+        <div class="content">
+            <p>When solving a Rubik's cube, you're going to want to start by picking which color you want to solve first, it doesn't matter what color it is but once you pick a starting color, stick with it until the end. To find what face your starting color is, locate the center piece that it matches then rotate the entire cube until your chosen color center piece is on the bottom face. This is how you will hold the cube for all of the steps.</p>
+            <div id="step_1">
+                <div class="step_backdrop"></div>
+                <h1 class="step_header">Step 1: The Cross</h1>
+                <p>The first step involves solving the four edge pieces that have your starting color, in the picture you can see that I have the four white edges lined up with all the corresponding centers. Sadly there are no algorithms for this step which makes it one of the hardest steps in the whole process, but with some good experimentation and trial and error, anyone can learn how to solve the first cross.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/edge_center_pair.jpg" alt="Edges Lined Up With Centers">
+                        <h2>Matching With Centers</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/first_cross.JPG" alt="First Cross Compleated">
+                        <h2>Compleated Cross</h2>
+                    </div>
                 </div>
             </div>
-            <p>If there are no corners with your starting color in the up face, you will need to look in the bottom face to find your starting corners. once you have located one hold it in the FRD (front, right, down) position. Then do the algorithm one time and that will move it to the top face and you can compleat this step.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/frd.jpg" alt="Front Right Down Piece">
-                    <h2>FRD</h2>
+            <div id="step_2">
+                <div class="step_backdrop"></div>
+                <h1 class="step_header">Step 2: Starting Color Corners</h1>
+                <p>Now that you have your first cross and all your starting color edges lined up, the next step is to solve your starting color corner pieces. First, you need to find one of the corners that have your starting color, then place it above the location it needs to go (ex. 1 and ex. 2) and do the following algorithm.</p>
+                <p>Once you have your corner lined up, do the following algorithm (R U R' U'). This will put the corner in the bottom face dirctly below where it was before. However the corner may not be lined up corectly but to remidy this all you need to do is repeat the algorithm up to 3 times.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/corner_ex1.jpg" alt="Corner Example">
+                        <h2>ex. 1</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/corner_ex2.jpg" alt="Corner Example">
+                        <h2>ex. 2</h2>
+                    </div>
+                </div>
+                <p>If there are no corners with your starting color in the up face, you will need to look in the bottom face to find your starting corners. once you have located one hold it in the FRD (front, right, down) position. Then do the algorithm one time and that will move it to the top face and you can compleat this step.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/frd.jpg" alt="Front Right Down Piece">
+                        <h2>FRD</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="step_3">
-            <h1 class="step_header">Step 3: Middle Slice</h1>
-            <div class="step_backdrop"></div>
-            <p>Now you need to look for edges that share colors that are your front face. Keep in mind that its ok to rotate the cube so your front face is a different color but keep your Up and Down faces the same. If the edge needs to be moved to the right do algorithm A and if it needs to move to the left do algorithm B.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/move_right.jpg" alt="Move Edge To The Right">
-                    <h2>A: (U R U' R' F R' F' R)</h2>
+            <div id="step_3">
+                <h1 class="step_header">Step 3: Middle Slice</h1>
+                <div class="step_backdrop"></div>
+                <p>Now you need to look for edges that share colors that are your front face. Keep in mind that its ok to rotate the cube so your front face is a different color but keep your Up and Down faces the same. If the edge needs to be moved to the right do algorithm A and if it needs to move to the left do algorithm B.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/move_right.jpg" alt="Move Edge To The Right">
+                        <h2>A: (U R U' R' F R' F' R)</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/middle_slice.jpg" alt="Compleated Step 3">
+                        <h2>ex. 1</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/move_left.jpg" alt="Move Edge To The Left">
+                        <h2>B: (U' L' U L F' L F L')</h2>
+                    </div>
                 </div>
-                <div class="picture_frame">
-                    <img src="images/middle_slice.jpg" alt="Compleated Step 3">
-                    <h2>ex. 1</h2>
+                <p>If there are no edges in the top face that need to move to the middle row, but the middle row is not solved (ex. 1). Hold one of the unsolved edges in the FR (front, right) position and do algorithm A. This will put that edge in the top face and you can compleat this step.</p>
+            </div>
+            <div id="step_4">
+                <h1 class="step_header">Step 4: Top Edge Permutation & Orientation</h1>
+                <div class="step_backdrop"></div>
+                <p>There are three scenarios you will be looking for in the top face and they are as follows, dot, 'L', and line. There is a fourth possibility and that would be cross, this is what we will be making from the other three scenarios. The algorithm for this step is (F R U R' F' U') hold each scenario like shown in the picture and do the algorithm, dot will lead into L, and L will lead into line and the line will lead into a cross.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/top_dot.JPG" alt="Dot Scenario">
+                        <h2>Dot</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/el.JPG" alt="L Scenario">
+                        <h2>L</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/line.JPG" alt="Line Scenario">
+                        <h2>Line</h2>
+                    </div>
+                    <div class="picture_frame">
+                        <img src="images/top_cross.JPG" alt="Cross Scenario">
+                        <h2>Cross</h2>
+                    </div>
                 </div>
-                <div class="picture_frame">
-                    <img src="images/move_left.jpg" alt="Move Edge To The Left">
-                    <h2>B: (U' L' U L F' L F L')</h2>
+                <p>Once you have the top cross you will turn the up face until two of the edges line up with the centers in the front, right, back, or left faces. Hold one of the edges that line up in the RU positions and the other needs to be either in the LU or BU positions then do this algorithm (R U R' U R U2 R') and repeat this step until all the edges are solved.</p>
+            </div>
+            <div id="step_5">
+                <h1 class="step_header">Step 5: Top Corner Permutation</h1>
+                <div class="step_backdrop"></div>
+                <p>look at the four remaining corner pieces and look for one that is in the right spot, this does not mean that the colors will line up you may need to look at the centers of each side and find a corner that just needs to be rotated. <br><br>Once you have located a corner That's in the right spot and hold the cube so the desired corner is in the URF position. Then do this algorithm (U R U' L' U R' U' L) until the remaining three corners are in their proper positions as well.</p>
+                <div class="flex_frame">
+                    <div class="picture_frame">
+                        <img src="images/top_corner.JPG" alt="Top Corner Example">
+                        <h2>ex. 1</h2>
+                    </div>
                 </div>
             </div>
-            <p>If there are no edges in the top face that need to move to the middle row, but the middle row is not solved (ex. 1). Hold one of the unsolved edges in the FR (front, right) position and do algorithm A. This will put that edge in the top face and you can compleat this step.</p>
-        </div>
-        <div id="step_4">
-            <h1 class="step_header">Step 4: Top Edge Permutation & Orientation</h1>
-            <div class="step_backdrop"></div>
-            <p>There are three scenarios you will be looking for in the top face and they are as follows, dot, 'L', and line. There is a fourth possibility and that would be cross, this is what we will be making from the other three scenarios. The algorithm for this step is (F R U R' F' U') hold each scenario like shown in the picture and do the algorithm, dot will lead into L, and L will lead into line and the line will lead into a cross.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/top_dot.JPG" alt="Dot Scenario">
-                    <h2>Dot</h2>
-                </div>
-                <div class="picture_frame">
-                    <img src="images/el.JPG" alt="L Scenario">
-                    <h2>L</h2>
-                </div>
-                <div class="picture_frame">
-                    <img src="images/line.JPG" alt="Line Scenario">
-                    <h2>Line</h2>
-                </div>
-                <div class="picture_frame">
-                    <img src="images/top_cross.JPG" alt="Cross Scenario">
-                    <h2>Cross</h2>
-                </div>
-            </div>
-            <p>Once you have the top cross you will turn the up face until two of the edges line up with the centers in the front, right, back, or left faces. Hold one of the edges that line up in the RU positions and the other needs to be either in the LU or BU positions then do this algorithm (R U R' U R U2 R') and repeat this step until all the edges are solved.</p>
-        </div>
-        <div id="step_5">
-            <h1 class="step_header">Step 5: Top Corner Permutation</h1>
-            <div class="step_backdrop"></div>
-            <p>look at the four remaining corner pieces and look for one that is in the right spot, this does not mean that the colors will line up you may need to look at the centers of each side and find a corner that just needs to be rotated. <br><br>Once you have located a corner That's in the right spot and hold the cube so the desired corner is in the URF position. Then do this algorithm (U R U' L' U R' U' L) until the remaining three corners are in their proper positions as well.</p>
-            <div class="flex_frame">
-                <div class="picture_frame">
-                    <img src="images/top_corner.JPG" alt="Top Corner Example">
-                    <h2>ex. 1</h2>
-                </div>
+            <div id="step_6">
+                <h1 class="step_header">Step 6: Top Conner Orientation</h1>
+                <div class="step_backdrop"></div>
+                <p>Once all the corners are in the right spot you will only one of them in the TRF position and do the following algorithm (D' R' D R) repeat this algorithm until the corner is orientated properly. You will notice that this messed up a lot of the cube but don't worry, turn the up face until another unsolved corner takes the place of the one you just solved and repeat the algorithm. Once you have repeated this step for all the unsolved corners the cube will be solved.</p>
             </div>
         </div>
-        <div id="step_6">
-            <h1 class="step_header">Step 6: Top Conner Orientation</h1>
-            <div class="step_backdrop"></div>
-            <p>Once all the corners are in the right spot you will only one of them in the TRF position and do the following algorithm (D' R' D R) repeat this algorithm until the corner is orientated properly. You will notice that this messed up a lot of the cube but don't worry, turn the up face until another unsolved corner takes the place of the one you just solved and repeat the algorithm. Once you have repeated this step for all the unsolved corners the cube will be solved.</p>
-        </div>
-    </main>
-    <footer>
-        <p>The Solution &copy; 2022 - Miles Noble</p>
-        <a href="site-plan.html">The Site Plan Link</a>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
+        <footer>
+            <p>The Solution &copy; 2022 - Miles Noble</p>
+            <a href="site-plan.html">The Site Plan Link</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>

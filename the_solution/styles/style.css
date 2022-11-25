@@ -2,7 +2,7 @@
 body {
     background-color: #4C4C4C;
 }
-main {
+.content {
     margin: 2%;
     max-width: 1500px;
     margin: auto;
