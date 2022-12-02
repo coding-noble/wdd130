@@ -7,32 +7,90 @@
         <link rel="stylesheet" href="styles/style.css">
         <title>Patterns Page</title>
     </head>
-    <header>
-        <img id="logo" src="images/the_solution_logo.png" alt="Logo Image">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="notation.html">Notation</a>
-            <a href="solution.html">Solution</a>
-            <a href="patterns.html">Patterns</a>
-        </nav>
-    </header>
-    <body></body>
-    <h1>Patterns</h1>
-    <main id="patterns_grid">
-    </main>
-    <footer>
-        <p>The Solution &copy; 2022 - Miles Noble</p>
-        <a href="site-plan.html">The Site Plan Link</a>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+    <body>
+        <header>
+            <img id="logo" src="images/the_solution_logo.png" alt="Logo Image">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="notation.html">Notation</a>
+                <a href="solution.html">Solution</a>
+                <a href="patterns.html">Patterns</a>
+            </nav>
+        </header>
+        <h1>Patterns</h1>
+        <div class="content">
+            <p>This page has four of my go to patterns when I want to diplay my Rubik's Cubes in a fun and unique way. Simply click on the pattern you would like to use and the algorithm for it will show below. When you are trying to memorize the algorithm try hiding it when you do it.</p>
+            <div id="patterns_grid">
+                <div>
+                    <button class="accordion">
+                        <h2>Checkerboard</h2>
+                        <img src="images/checkerboard.JPG" alt="Checkerboard Pattern">
+                    </button>
+                    <div class="panel">
+                        <p>(U2 D2 F2 B2 L2 R2)</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">
+                        <h2>Flower or Dot's</h2>
+                        <img src="images/dots_wrg.JPG" alt="Flower/Dot's Pattern">
+                    </button>
+                    <div class="panel">
+                        <p>(U D' R L' F B' U D')</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">
+                        <h2>Cube in a Cube</h2>
+                        <img src="images/cube_in_cube_yrb.jpg" alt="Checkerboard Pattern">
+                    </button>
+                    <div class="panel">
+                        <p>(F L F U' R U F2 L2 U' L' B D' B' L2 U)</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion">
+                        <h2>Cube in a Cube in a Cube</h2>
+                        <img src="images/cube_x3_gow.JPG" alt="Flower/Dot's Pattern">
+                    </button>
+                    <div class="panel">
+                        <p>(U' L' U' F' R2 B' R F U B2 U B' L U' F U R F')</p>
+                    </div>
+                </div>
         </div>
-    </footer>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        /* Toggle between adding and removing the "active" class,
+                        to highlight the button that controls the panel */
+                        this.classList.toggle("active");
+
+                        /* Toggle between hiding and showing the active panel */
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else panel.style.display = "block";
+                    });
+                }
+            </script>
+        </div>
+        <footer>
+            <p>The Solution &copy; 2022 - Miles Noble</p>
+            <a href="site-plan.html">The Site Plan Link</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>
