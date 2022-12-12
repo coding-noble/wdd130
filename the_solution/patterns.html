@@ -6,53 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <title>Patterns Page</title>
+        <style>
+            #patterns_grid {
+                display: grid;
+               grid-template-columns: 1fr 1fr;
+                margin-top: 2%;
+            }
+            div:nth-of-type(1) {
+                grid-area: 1/1/2/2;
+            }
+            div:nth-of-type(2) {
+                grid-area: 1/2/2/3;
+            }
+            div:nth-of-type(3) {
+                grid-area: 2/1/3/2;
+            }
+            div:nth-of-type(4) {
+                grid-area: 2/2/3/3;
+            }
+            .accordion {
+                background-color: #D1D1D1;
+                padding: 2%;
+                border: none;
+                transition: 0.4s;
+            }
+            .accordion :active {
+                margin-bottom: 0;
+            }
+            button {
+                margin: 2%;
+            }
+            .accordion:hover {
+                background-color: #636363;
+            }
+            .accordion img {
+                width: 100%;
+                height: 100%;
+            }
+            .panel {
+                display: none;
+                text-align: center;
+                font-size: 1.4em;
+            }
+            .panel p {
+                margin-bottom: 2%;
+            }
+        </style>
     </head>
-    <style>
-        #patterns_grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin-top: 2%;
-        }
-        div:nth-of-type(1) {
-            grid-area: 1/1/2/2;
-        }
-        div:nth-of-type(2) {
-            grid-area: 1/2/2/3;
-        }
-        div:nth-of-type(3) {
-            grid-area: 2/1/3/2;
-        }
-        div:nth-of-type(4) {
-            grid-area: 2/2/3/3;
-        }
-        .accordion {
-            background-color: #D1D1D1;
-            padding: 2%;
-            border: none;
-            transition: 0.4s;
-        }
-        .accordion :active {
-            margin-bottom: 0;
-        }
-        button {
-            margin: 2%;
-        }
-        .accordion:hover {
-            background-color: #636363;
-        }
-        .accordion img {
-            width: 100%;
-            height: 100%;
-        }
-        .panel {
-            display: none;
-            text-align: center;
-            font-size: 1.4em;
-        }
-        .panel p {
-            margin-bottom: 2%;
-        }
-    </style>
     <body>
         <header>
             <img id="logo" src="images/the_solution_logo.png" alt="Logo Image">
@@ -68,8 +68,7 @@
             <p>This page has four of my go-to patterns when I want to display my Rubik's Cubes in a fun and unique way. Simply click on the pattern you would like to use and the algorithm for it will show below. When you are trying to memorize the algorithm try hiding it when you do it.</p>
             <div id="patterns_grid">
                 <div>
-                    <button class="accordion">
-                        <h2>Checkerboard</h2>
+                    <button class="accordion">Checkerboard
                         <img src="images/checkerboard.JPG" alt="Checkerboard Pattern">
                     </button>
                     <div class="panel">
@@ -77,8 +76,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="accordion">
-                        <h2>Flower or Dot's</h2>
+                    <button class="accordion">Flower or Dot's
                         <img src="images/dots_wrg.JPG" alt="Flower/Dot's Pattern">
                     </button>
                     <div class="panel">
@@ -86,8 +84,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="accordion">
-                        <h2>Cube in a Cube</h2>
+                    <button class="accordion">Cube in a Cube
                         <img src="images/cube_in_cube_yrb.jpg" alt="Checkerboard Pattern">
                     </button>
                     <div class="panel">
@@ -95,8 +92,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="accordion">
-                        <h2>Cube in a Cube in a Cube</h2>
+                    <button class="accordion">Cube in a Cube in a Cube
                         <img src="images/cube_x3_gow.JPG" alt="Flower/Dot's Pattern">
                     </button>
                     <div class="panel">
